@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+  /*----------------------NAV---------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color:white; 
+    padding-left: 200px; 
+    padding-right: 200px; 
+}
+
+.logo img {
+    height: 200px; 
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f382c6; 
+    text-decoration: none;
+    font-size: 28px; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+    color: #af5285;
+}
+.banner-sucursal{
+    width: 100%;
+    height: auto;
+}
+.banner-sucursal img{
+    width: 100%;
+    height: auto;
+}
+
+  /*----------------------MAIN---------------------*/
+.sucursal-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 50px;
+    text-align: center; 
+}
+
+.sucursal-imagen {
+    max-width: 80%; 
+    height: auto; 
+    margin-bottom: 30px; 
+}
+
+.reseña p {
+    font-size: 30px;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    max-width: 600px; 
+    text-align: left;
+}
+.horarios {
+    display: flex;
+    justify-content: center; 
+    padding: 5px;
+}
+
+.horarios-cuadro {
+    border: 2px solid black; 
+    padding: 10px; 
+    background-color: #acaaf2; 
+    text-align: center; 
+    width: 773px;
+}
+
+.horarios-cuadro p {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #fbf2f7;
+}
+/* Estilos para la sección de imágenes */
+.galeria{
+    padding: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center; 
+}
+.galeria-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 220px;
+}
+
+  /*----------------------FOOTER---------------------*/
+footer {
+    background-color: #8664a3;
+    color: white;
+    padding: 20px 0;
+
+}
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 350px; 
+}
+
+.footer-logo img {
+    height: auto; 
+}
+
+.footer-info {
+    flex: 1; 
+    padding: 0 30px; 
+}
+
+.footer-info p {
+    margin: 5px 0; 
+}
+
+.footer-redes {
+    display: flex;
+    gap: 40px; 
+}
+
+.footer-redes img {
+    height: auto; 
+}
+
+  /*----------------------TABLETS---------------------*/
+@media screen and (max-width: 960px) and (min-width: 500px) {
+    /*----------------------NAV---------------------*/
+    header {
+        padding-left: 70px;
+        padding-right: 120px;
+    }
+
+    .logo img {
+        height: 150px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    /*----------------------BANNER---------------------*/
+    .banner-sucursal img {
+        height: auto; 
+    }
+
+    /*----------------------SUCURSAL---------------------*/
+    .sucursal-contenido {
+        padding: 20px;
+    }
+
+    .sucursal-imagen {
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .reseña p {
+        font-size: 24px;
+        max-width: 500px;
+    }
+
+    .horarios {
+        padding: 10px;
+    }
+
+    .horarios-cuadro {
+        max-width: 600px;
+    }
+
+    .horarios-cuadro p {
+        font-size: 24px;
+    }
+
+    /*----------------------GALERIA---------------------*/
+    .galeria {
+        padding: 20px;
+    }
+
+    .galeria-contenedor {
+        gap: 10px;
+    }
+
+    /*----------------------FOOTER---------------------*/
+    .footer-contenedor {
+        max-width: 1000px;
+        padding: 0 120px;
+    }
+
+    .footer-redes {
+        gap: 20px;
+    }
+
+    .footer-redes img {
+        height: 60px;
+    }
+}
+
+/*----------------------CELULARES---------------------*/
+@media screen and (max-width: 500px) {
+    /*----------------------NAV---------------------*/
+    header {
+        padding: 10px 5px;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /*----------------------BANNER---------------------*/
+    .banner-sucursal img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*----------------------SUCURSAL---------------------*/
+    .sucursal-contenido {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sucursal-imagen {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .reseña p {
+        font-size: 18px; 
+        max-width: 100%;
+        text-align: center; 
+    }
+
+    .horarios {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horarios-cuadro {
+        width: 100%; 
+        max-width: 300px; 
+        padding: 10px;
+        text-align: center;
+    }
+
+    .horarios-cuadro p {
+        font-size: 18px; 
+    }
+
+    /*----------------------GALERIA---------------------*/
+    .galeria {
+        padding: 20px;
+    }
+
+    .galeria-contenedor {
+        margin-left: 0;
+        flex-direction: column; 
+    }
+
+    .galeria-contenedor img {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 10px; 
+    }
+
+    /*----------------------FOOTER---------------------*/
+    footer {
+        padding: 15px 0; 
+    }
+
+    .footer-contenedor {
+        flex-direction: column; 
+        padding: 0 20px; 
+    }
+
+    .footer-logo img {
+        height: 80px; 
+    }
+
+    .footer-info {
+        padding: 10px 0; 
+        text-align: center; 
+    }
+
+    .footer-info p {
+        margin: 5px 0; 
+    }
+
+    .footer-redes {
+        gap: 10px; 
+        justify-content: center; 
+    }
+
+    .footer-redes img {
+        height: 40px; 
+    }
+}
+

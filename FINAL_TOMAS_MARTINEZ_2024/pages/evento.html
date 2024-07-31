@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/evento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Evento</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imgs/logo.png" alt="Logo Rustica">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../pages/menu.html">MENÚ</a></li>
+                <li><a href="../pages/sucursal.html">SUCURSAL</a></li>
+                <li><a href="/pages/evento.html">EVENTOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="separador">
+        <img src="../imgs/banners/banner_sucursal.jpg" alt="">
+    </div>
+    <main>
+        <section class="seccion-evento">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col text-center">
+                        <h2>EVENTOS DE AGOSTO</h2>
+                        <p>Este es nuestro calendario para que veas los dias disponibles para organizar tu evento. Reuniones, festejos y mas, todo en Rustica. Solo los dias Lunes, Martes y Miercoles. ¿Que estas esperando?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Domingo</th>
+                                        <th>Lunes</th>
+                                        <th>Martes</th>
+                                        <th>Miércoles</th>
+                                        <th>Jueves</th>
+                                        <th>Viernes</th>
+                                        <th>Sábado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Fila 1 -->
+                                    <tr>
+                                        <td class="no-disponible"></td>
+                                        <td class="disponible">1 - Libre</td>
+                                        <td class="reservado">2 - Ocupado</td>
+                                        <td class="disponible">3 - Libre</td>
+                                        <td class="no-disponible">4</td>
+                                        <td class="no-disponible">5</td>
+                                        <td class="no-disponible">6</td>
+                                    </tr>
+                                    <!-- Fila 2 -->
+                                    <tr>
+                                        <td class="no-disponible">7</td>
+                                        <td class="disponible">8 - Libre</td>
+                                        <td class="reservado">9 - Ocupado</td>
+                                        <td class="disponible">10 - Libre</td>
+                                        <td class="no-disponible">11</td>
+                                        <td class="no-disponible">12</td>
+                                        <td class="no-disponible">13</td>
+                                    </tr>
+                                    <!-- Fila 3 -->
+                                    <tr>
+                                        <td class="no-disponible">14</td>
+                                        <td class="disponible">15 - Libre</td>
+                                        <td class="reservado">16 - Ocupado</td>
+                                        <td class="disponible">17 - Libre</td>
+                                        <td class="no-disponible">18</td>
+                                        <td class="no-disponible">19</td>
+                                        <td class="no-disponible">20</td>
+                                    </tr>
+                                    <!-- Fila 4 -->
+                                    <tr>
+                                        <td class="no-disponible">21</td>
+                                        <td class="disponible">22 - Libre</td>
+                                        <td class="reservado">23 - Ocupado</td>
+                                        <td class="disponible">24 - Libre</td>
+                                        <td class="no-disponible">25</td>
+                                        <td class="no-disponible">26</td>
+                                        <td class="no-disponible">27</td>
+                                    </tr>
+                                    <!-- Fila 5 -->
+                                    <tr>
+                                        <td class="no-disponible">28</td>
+                                        <td class="disponible">29 - Libre</td>
+                                        <td class="reservado">30 - Ocupado</td>
+                                        <td class="no-disponible">31</td>
+                                        <td class="no-disponible"></td>
+                                        <td class="no-disponible"></td>
+                                        <td class="no-disponible"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-formulario">
+            <div class="container">
+                <!-- Título del formulario -->
+                <div class="row mb-4">
+                    <div class="col text-center">
+                        <h2>¡HACE TU RESERVA!</h2>
+                        <p>Por favor, completa el siguiente formulario para reservar tu evento.</p>
+                    </div>
+                </div>
+                <!-- Formulario de reserva -->
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="dia">Día para Reservar</label>
+                                    <select class="form-control" id="dia" required>
+                                        <option value="">Seleccionar día...</option>
+                                        <option value="1">1 - Libre</option>
+                                        <option value="3">3 - Libre</option>
+                                        <option value="8">8 - Libre</option>
+                                        <option value="10">10 - Libre</option>
+                                        <option value="15">15 - Libre</option>
+                                        <option value="17">17 - Libre</option>
+                                        <option value="22">22 - Libre</option>
+                                        <option value="24">24 - Libre</option>
+                                        <option value="29">29 - Libre</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="detalles">Detalles del Evento</label>
+                                <textarea class="form-control" id="detalles" rows="5" placeholder="Escribe aquí los detalles del evento..." required></textarea>
+                            </div>
+                            <a href="#" class="enviar-link">Enviar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>          
+    </main>
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <img src="../imgs/footer/footer-logo.jpg" alt="">
+            </div>
+            <div class="footer-info">
+                <p>Zapiola 2125</p>
+                <p>Belgrano R - CABA</p>
+                <p>Rustica - La Pasteleria</p>
+            </div>
+            <div class="footer-redes">
+                <a href="https://www.facebook.com/rustica.pasteleria/"><img src="../imgs/footer/logo-facebook.jpg" alt=""></a>
+                <a href="https://www.instagram.com/rustica.pasteleria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="../imgs/footer/logo-instagram.jpg" alt=""></a>
+                <img src="../imgs/footer/logo-telefono.jpg" alt="">
+                <img src="../imgs/footer/logo-email.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
